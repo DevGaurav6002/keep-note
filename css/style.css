@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1.5px;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #222;
+}
+
+header {
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.search-feild span {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-right: 10px;
+  letter-spacing: 3px;
+}
+
+.search-feild input {
+  border: none;
+  height: 30px;
+  width: 500px;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  font-size: 1rem;
+  outline: none;
+  padding: 5px;
+  color: #fff;
+}
+
+.create-btn button {
+  padding: 7px;
+  color: #fff;
+  background-color: rgb(4, 41, 153);
+  font-weight: 600px;
+  border: none;
+  border-radius: 5px;
+  transition: all ease-in 0.3s;
+  box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0.4);
+}
+
+.create-btn button:hover {
+  color: rgb(4, 41, 153);
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.e-r-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.e-r-btns .remove {
+  background-color: rgb(4, 41, 153);
+  color: #fff;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0.4);
+  transition: all ease-in 0.3s;
+  font-size: 1rem;
+}
+
+.e-r-btns .remove:hover {
+  background-color: #fff;
+  color: rgb(4, 41, 153);
+}
+
+.e-r-btns .edit {
+  background-color: rgb(4, 41, 153);
+  color: #fff;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0.4);
+  transition: all ease-in 0.3s;
+  font-size: 1rem;
+}
+
+.e-r-btns .edit:hover {
+  background-color: #fff;
+  color: rgb(4, 41, 153);
+}
+
+main {
+  position: relative;
+  padding: 40px;
+  height: 85vh;
+}
+
+.main-container .notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.main-container .notes .note {
+  background-color: transparent;
+  border: 0.5px solid #fff;
+  padding: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.main-container .notes .note h2 {
+  color: yellowgreen;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.main-container .notes .note p {
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.create-module {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  padding: 5px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.create-module .module-heading input {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  outline: none;
+  color: #ccc;
+  letter-spacing: 2px;
+}
+
+.create-module .module-description textarea {
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  color: #fff;
+  outline: none;
+}
+
+.create-module .save-btn button {
+  border: none;
+  font-size: 1.2rem;
+  background: rgb(4, 41, 153);
+  color: #fff;
+  padding: 7px;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0.4);
+}
+
+.create-module .save-btn button:hover {
+  color: rgb(4, 41, 153);
+  background-color: #fff;
+}
+
+@media (max-width: 900px) {
+  .search-feild span {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-right: 10px;
+    letter-spacing: 1.5px;
+    display: none;
+  }
+
+  .search-feild input {
+    border: none;
+    height: 30px;
+    width: 300px;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    font-size: 1rem;
+    outline: none;
+    padding: 5px;
+    color: #fff;
+  }
+
+  .create-btn button {
+    padding: 7px;
+    color: #fff;
+    background-color: rgb(4, 41, 153);
+    font-weight: 600px;
+    border: none;
+    border-radius: 5px;
+    transition: all ease-in 0.3s;
+    box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0.4);
+  }
+  .main-container .notes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .main-container .notes .note {
+    background-color: transparent;
+    border: 0.5px solid #fff;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .main-container .notes .note h2 {
+    color: yellowgreen;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+
+  .main-container .notes .note p {
+    color: #ccc;
+    line-height: 1.2;
+    font-size: small;
+  }
+  .e-r-btns .remove {
+    background-color: rgb(4, 41, 153);
+    color: #fff;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0.4);
+    transition: all ease-in 0.3s;
+    font-size: 0.7rem;
+  }
+  .e-r-btns .edit {
+    background-color: rgb(4, 41, 153);
+    color: #fff;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0.4);
+    transition: all ease-in 0.3s;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .search-feild input {
+    border: none;
+    height: 20px;
+    width: 150px;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    font-size: 0.7rem;
+    outline: none;
+    color: #fff;
+  }
+  .create-btn button {
+    padding: 4px;
+    color: #fff;
+    background-color: rgb(4, 41, 153);
+    font-weight: 600px;
+    border: none;
+    border-radius: 5px;
+    transition: all ease-in 0.3s;
+    box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0.4);
+    font-size: 0.9rem;
+  }
+}
